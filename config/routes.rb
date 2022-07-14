@@ -10,4 +10,5 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
   get 'my_friends', to: 'users#my_friends'
+  get 'search_friend', to: 'users#search'
 end
