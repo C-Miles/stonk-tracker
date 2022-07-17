@@ -1,6 +1,5 @@
-<h2>User Details</h2>
-
-<div class="card card-header results-block">
+<h2 class="mt-2">User Details</h2>
+<div class="card card-header results-block mt-4">
   <table class="col-md-12">
     <tbody>
       <tr>
@@ -21,8 +20,10 @@
   </table>
 </div>
 
-<% if !@tracked_stocks.empty? %>
-  <%= render 'stocks/list'%>
-<% else %>
-  <p class='lead'>This user is not tracking any stonks</p>
-<% end %>
+<div class="mobile">
+  <% if !@tracked_stocks.empty? %>
+    <%= render 'stocks/list'%>
+  <% else %>
+    <p class='lead'>This user is not tracking any stonks</p>
+  <% end %>
+</div>
