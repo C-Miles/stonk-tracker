@@ -1,5 +1,10 @@
 @import 'bootstrap/dist/css/bootstrap';
 
+html,
+body {
+  height: 100%;
+}
+
 #logo {
   float: left;
   text-transform: uppercase;
@@ -50,4 +55,12 @@
 }
 .ratio {
   aspect-ratio: 7 / 4
+}
+
+.container {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }
