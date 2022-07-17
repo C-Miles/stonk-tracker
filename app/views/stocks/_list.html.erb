@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row mobile">
   <div class="col-9">
     <table class="table table-bordered table-hover">
       <thead>
@@ -18,8 +18,8 @@
             <td><% if current_user.can_track_stock?(stock.ticker) %>
                 <%= link_to 'Add to portfolio', user_stocks_path(user: current_user, ticker: stock.ticker),
                                                         class: 'btn btn-success', method: :post %>
-                <% elsif current_user.id != @user.id %>
-                  <span class="badge badge-secondary">
+              <% elsif current_user.id != @user.id %>
+                <span class="badge badge-secondary">
                   You are already tracking 
                   <% if !current_user.under_stock_limit? %>
                     10 stocks

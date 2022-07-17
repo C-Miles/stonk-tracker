@@ -1,8 +1,11 @@
 @import 'bootstrap/dist/css/bootstrap';
 
-// .navbar-brand {
-//   font-size: 3rem;
-// }
+#logo {
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
 
 .search-area {
   padding-top: 50px;
@@ -28,4 +31,23 @@
 .user-name {
   margin-top: 3.5%;
   padding-right: 5px;
+}
+
+#home-container {
+  margin-top: 6%;
+}
+
+@media (max-width:767px){
+  .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nowrap {
+    flex-wrap: nowrap;
+  }
+}
+.ratio {
+  aspect-ratio: 7 / 4
 }
